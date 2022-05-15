@@ -26,8 +26,7 @@ void createTriangle(char matrix[ROW][COL], int start_row, int start_col, int len
     int i, j;
     for (i = 0; i < length; i++) {
         for (j = start_col - i; j <= start_col + i; j++) {
-            if (j <= start_col + i && j >= start_col - i)
-                matrix[start_row + i][j] = '1';
+            matrix[start_row + i][j] = '1';
         }
     }
 }
